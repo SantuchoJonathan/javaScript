@@ -40,7 +40,7 @@ while (correcto != "si") {
 alert(
   "Bienvenido " +
     nombreApellido +
-    ". Es un gusto que haya accedido a vuestra plataforma.\nLe pediremos que ingrese el monto deseado y la cantidad de cuotas.\nLe recordamos que esta sujeto a verificacion crediticia."
+    ". Es un gusto que hayas accedido a vuestra plataforma.\nLe pediremos que ingrese el monto deseado y la cantidad de cuotas.\nLe recordamos que esta sujeto a verificacion crediticia."
 );
 
 let monto = parseInt(prompt("Ingresa el MONTO que desea simular"));
