@@ -13,20 +13,13 @@ let edad = parseInt(prompt("Ingrese su EDAD"));
 
 //Funcion creada para concatenar los datos de la variable nombre y apellido
 function nombreyApellido(nombre, apellido) {
-  let nombreapellido = nombre + " " +apellido;
+  let nombreapellido = nombre + " " + apellido;
   return nombreapellido;
 }
 
 let nombreApellido = nombreyApellido(nombre, apellido);
 
 let confirmar = true;
-
-//Esta funcion es para evitar copiar lo mismo en varios lados
-function ingresoDatos() {
-  let nombre = prompt("Ingrese su NOMBRE");
-  let apellido = prompt("Ingrese su APELLIDO");
-  let edad = parseInt(prompt("Ingrese su EDAD"));
-}
 
 let correcto = parseInt(
   prompt(
@@ -51,7 +44,9 @@ while (confirmar === true) {
     break;
   } else if (correcto === 2) {
     alert("Volve a ingresar tus DATOS");
-    ingresoDatos();
+    nombre = prompt("Ingrese su NOMBRE");
+    apellido = prompt("Ingrese su APELLIDO");
+    edad = parseInt(prompt("Ingrese su EDAD"));
 
     correcto = parseInt(
       prompt(
@@ -67,7 +62,9 @@ while (confirmar === true) {
   } else {
     alert("Los datos ingresados son Incorrectos");
     alert("Volve a ingresar tus DATOS");
-    ingresoDatos();
+    nombre = prompt("Ingrese su NOMBRE");
+    apellido = prompt("Ingrese su APELLIDO");
+    edad = parseInt(prompt("Ingrese su EDAD"));
 
     correcto = parseInt(
       prompt(
@@ -111,7 +108,7 @@ const cuotasTasaNominal = tna / 100 / 12;
 let resultadoCuotas = cuotasConstantesCalculo();
 //Esta variable es para poder definir el interes mensual que genera el monto que eligio el cliente
 let interesFinal = monto * cuotasTasaNominal;
-//Esta variable corresponde al total a abonar. Esta incluido el interes, y el IVA 
+//Esta variable corresponde al total a abonar. Esta incluido el interes, y el IVA
 let cuotasPagar = resultadoCuotas + interesFinal * iva;
 
 while (confirmacion !== 1) {
